@@ -33,7 +33,7 @@ $config->get('user::foo.bar');
 ## Api
 
 | Method | Description |
-| :-----:| :---------: |
+| :-----| :--------- |
 | setItems(array $items = []) | Set the configuration items. |
 | addNamespace(string $directory, ?string $namespace = null): void | Add a namespace to configuration. |
 | has($key): bool | Determine if the given configuration value exists. |
