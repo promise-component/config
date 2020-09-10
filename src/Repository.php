@@ -67,7 +67,7 @@ class Repository implements RepositoryInterface, ArrayAccess
 	 *
 	 * @param $directory
 	 */
-	public function addNamespace(string $directory, ?string $namespace = null)
+	public function addNamespace(string $directory, ?string $namespace = null): void
 	{
 		$files = DirectoryFiles::make($directory);
 
@@ -142,7 +142,7 @@ class Repository implements RepositoryInterface, ArrayAccess
 	 *
 	 * @return void
 	 */
-	public function push($key, $value):  void
+	public function push($key, $value): void
 	{
 		$array = $this->get($key);
 

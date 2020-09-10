@@ -32,11 +32,14 @@ $config->get('user::foo.bar');
 
 ## Api
 
-| Method | Parameters | Description |
-| :-----:| :--------: | :---------: |
-| setItems | [array] items | Set the configuration items. |
-| has | [string] key | Determine if the given configuration value exists. |
-| get | [string] key, [mixed] default | Get the specified configuration value. |
-| getMany | [array] keys | Get many configuration values. |
-| set | [string] key, [string or array] value | Set a given configuration value. |
-| all |   | Get all of the configuration items for the application.. |
+| Method | Description |
+| :-----:| :---------: |
+| setItems(array $items = []) | Set the configuration items. |
+| addNamespace(string $directory, ?string $namespace = null): void | Add a namespace to configuration. |
+| has($key): bool | Determine if the given configuration value exists. |
+| get($key, $default = null) |Get the specified configuration value. |
+| getMany(array $keys): array | Get many configuration values. |
+| set($key, $value = null): void |  Set a given configuration value. |
+| prepend($key, $value): void |  Prepend a value onto an array configuration value. |
+| push($key, $value): void |  Push a value onto an array configuration value. |
+| all(): array |  Get all of the configuration items for the application.. |
