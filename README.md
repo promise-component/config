@@ -12,7 +12,7 @@ composer require promise/component-config
 
 ```php
 
-$config = Promise\Component\Config\Repository
+$config = new Promise\Component\Config\Repository
 
 // Set initial configuration items
 $config->setItems([
